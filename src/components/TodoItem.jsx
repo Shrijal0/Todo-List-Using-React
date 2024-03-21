@@ -10,7 +10,7 @@ const TodoItem = ({ item, todos, setTodos }) => {
     setTodos(newArray)
   }
   return (
-    <div className="w-500 text-gray-700 text-xl">
+    <div className="w-full md:w-500 text-gray-700 text-xl">
       <div className="flex justify-between items-center font-bold px-5 py-2">
         <span className={item.done ? "line-through" : ""} onClick={() => handleClick(item.name)}>{item.name}</span>
         <span>

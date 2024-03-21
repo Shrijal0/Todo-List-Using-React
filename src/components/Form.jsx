@@ -12,12 +12,12 @@ const Form = ({ todos, setTodos }) => {
   return (
     <div>
       <form
-        className="bg-white rounded-lg p-5 w-500 mx-auto mt-12 shadow-md"
+        className="bg-white rounded-lg p-5 w-full md:w-[500px] mx-auto mt-12 shadow-md"
         onSubmit={handleSubmit}
       >
         <div className="flex">
           <input
-            className="bg-white w-full block outline-none text-black text-base"
+            className="bg-white w-full block outline-none text-black text-xl md:text-base"
             onChange={(e) => setTodo({ name: e.target.value, done: false })}
             value={todo.name}
             type="text"
@@ -27,7 +27,7 @@ const Form = ({ todos, setTodos }) => {
             className="bg-black  inline-block outline-none rounded px-6 py-2"
             type="submit"
           >
-            <MdOutlineAddToPhotos className="text-white"/>
+            <MdOutlineAddToPhotos className="text-white" />
           </button>
         </div>
       </form>

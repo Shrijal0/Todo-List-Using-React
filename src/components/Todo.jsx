@@ -12,7 +12,7 @@ const Todo = () => {
   return (
     <div className="h-full flex flex-col justify-between">
       <Header />
-      <div>
+      <div className="px-5 md:px-0">
         <Form todos={todos} setTodos={setTodos}/>
         <TodoList todos={todos} setTodos={setTodos} />
       </div>

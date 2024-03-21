@@ -6,10 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      width: {
-        '500': '500px',
-        '455': '455px',
-      }
     },
   },
   plugins: [],
